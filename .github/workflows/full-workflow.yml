@@ -36,9 +36,14 @@ jobs:
       uses: supercharge/mongodb-github-action@1.1.0
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
+  
+  tests:
+  
+    runs-on: ubuntu-latest
 
+    steps:
     - name: Install dependencies
       run: echo "Aqui iria instalar as dependencias"
 
     - name: Run all tests
-      run: echo "E aqui iria rodar os testes"
+      run: echo "E aqui iria rodar os testes!!!"
